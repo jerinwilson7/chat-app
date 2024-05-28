@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="icon" href="images/chat.png" type="image/x-icon">
+    <title>Chat App</title>
 </head>
 <body>
+
+    <div class="sender-selector-container">
+        <button class="active-sender sender-selector-button button" id="david">David</button>
+        <button class="sender-selector-button button" id="emma">Emma</button>
+    </div>
+
+    <div class="chat-container">
+        <h2 class="chat-header">David chatting.....</h2>
+
+        <div class="chat-messages">
+
+            <div class="message blue-bg">
+                <div class="message-sender">David</div>
+                <div class="message-content">Hey Emma, what's up!</div>
+                <div class="message-timestamp">12:07 AM</div>
+            </div>
+
+            <div class="message gray-bg">
+                <div class="message-sender">Emma</div>
+                <div class="message-content"> Not much, just chilling</div>
+                <div class="message-timestamp">12:14 Am</div>
+            </div>
+        </div>
+
+        <form class="chat-input-form">
+            <input type="text" class="chat-input" placeholder="Type here John..." required>
+            <button class="button send-button" type="submit">Send</button>
+        </form>
+        <button class="clear-chat-button button" >Clear Chat</button>
+    </div>
     
+    <script src="app.js"></script>
 </body>
 </html>

@@ -3,3 +3,133 @@ body{
     background: rgb(20,0,36);
     background: linear-gradient(346deg, rgba(20,0,36,1) 6%, rgba(103,9,121,1) 42%, rgba(89,0,255,1) 79%);
 }
+
+
+.sender-selector-container{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    max-width: 40em;
+    margin: 3em auto 1em;
+}
+
+.button{
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.625em;
+
+}
+
+.button:hover{
+    filter: brightness(0.9);
+}
+
+.button:active{
+    transform: translateY(2px);
+}
+
+.sender-selector-button{
+    width: 100%;
+    background-color: #8C52FF;
+    color: white;
+    font-size: 1.1em;
+    
+}
+
+.active-sender{
+    background-color: #FFD700;
+    font-weight: bolder;
+    /* background-color: #FF5733; */
+    /* background-color: #00FF00; */
+    box-shadow: 0 0 0.5em 0.1em #c3c3c333;
+}
+
+.chat-container{
+    background: rgba(170, 139, 165, 0.3);
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 37.5em;
+    height: 37.5em;
+    border-radius: 0.5em;
+    padding: 0.5em 1.25em;
+    box-shadow: 0 0 1.25em 0.5em #7037f532;
+}
+
+.chat-header{
+    color: white;
+    margin-bottom: 1em;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.chat-messages{
+    height: 23em;
+    overflow-y: scroll;
+}
+
+.chat-messages::-webkit-scrollbar{
+    display: none;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0.625em;
+    margin-bottom: 0.325em;
+    border-radius: 1em;
+}
+
+.message-content{
+    font-size: 1em;
+    margin-bottom: 0.31em;
+    word-wrap: break-word;
+}
+
+.message-timestamp{
+    text-align: right;
+    font-size: 0.75em;
+}
+
+.blue-bg{
+    background-color: #808080;
+}
+
+.gray-bg{
+    background-color: #008080;
+}
+
+.chat-input-form{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 0.5em;
+}
+
+.chat-input{
+    padding: 0.625em;
+    flex-grow: 1;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1em;
+    background-color: #f5f5f5;
+    color: #333;
+
+}
+
+.send-button{
+    background-color: #FFD700;
+    color: #4b4646;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.clear-chat-button{
+    background-color: black;
+    color: #FFD700;
+    font-size: 1em;
+    font-weight: bolder;
+    margin: 2.5em auto;
+    display: block;
+}
